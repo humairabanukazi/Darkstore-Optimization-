@@ -1,0 +1,30 @@
+{
+    "project": "Demand Forecasting & Dark Store Optimization",
+    "team": [
+        "Kazi Humaira - 23315A0032",
+        "Kashab Shaikh - 23315A0072"
+    ],
+    "dataset": {
+        "total_rows": 947752,
+        "total_columns": 15,
+        "source": "Quick Commerce Dataset - Kaggle"
+    },
+    "model": {
+        "name": "LightGBM Classifier",
+        "accuracy": "92.08%",
+        "train_rows": 758201,
+        "test_rows": 189551
+    },
+    "clustering": {
+        "algorithm": "DBSCAN",
+        "total_cities": 12,
+        "zones_found": 3
+    },
+    "inventory": {
+        "city_category_pairs": 84,
+        "safety_stock_units": 9,
+        "recommended_stock_units": 19
+    },
+    "top_city": "Delhi",
+    "fastest_delivery_avg": "7.1 min"
+}

@@ -1,0 +1,76 @@
+==================================================
+  DARK STORE OPTIMIZATION - MODEL RESULTS
+==================================================
+
+DATASET INFO
+----------------------------------------
+Total Rows       : 947,752
+Total Columns    : 15
+Training Rows    : 758,201
+Testing Rows     : 189,551
+
+MODEL PERFORMANCE
+----------------------------------------
+Model Used       : LightGBM Classifier
+Accuracy         : 92.08%
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+Slow Delivery       0.93      0.93      0.93    106555
+Fast Delivery       0.91      0.90      0.91     82996
+
+     accuracy                           0.92    189551
+    macro avg       0.92      0.92      0.92    189551
+ weighted avg       0.92      0.92      0.92    189551
+
+FEATURE IMPORTANCE
+----------------------------------------
+                Feature  Importance
+              City_Code         575
+           Company_Code         408
+            Distance_Km         354
+            Order_Value          85
+            Items_Count          26
+        Customer_Rating          21
+           Customer_Age          13
+          Category_Code           3
+       Discount_Applied           3
+           Payment_Code           3
+Delivery_Partner_Rating           1
+
+CITY CLUSTERS
+----------------------------------------
+City_Name  Total_Orders  Avg_Delivery_Time  High_Demand_Count  Cluster
+ Amritsar         79057          15.572865              38304        0
+Bengaluru         78949          16.518981              31941        0
+  Chennai         78703          15.537591              38341        0
+    Delhi         79162           7.140699              77922       -1
+  Gurgaon         78986          15.558390              38430        1
+ Haridwar         78939          27.547815                410       -1
+Hyderabad         79462          15.539503              38909        0
+   Jaipur         78879          20.553798              10825       -1
+  Kolkata         79159          15.541177              38592        0
+   Mumbai         79056          17.517304              25702        0
+    Noida         78843          15.518283              38553        1
+     Pune         78557          15.563463              38144        0
+
+TOP 10 INVENTORY PRIORITIES
+----------------------------------------
+City_Name Category_Name  Total_Orders  Safety_Stock  Recommended_Stock     Restock_Alert
+  Gurgaon     Household         11468             9                 19 🟡 MEDIUM PRIORITY
+    Delhi         Dairy         11466             9                 19 🟡 MEDIUM PRIORITY
+Hyderabad        Snacks         11439             9                 19 🟡 MEDIUM PRIORITY
+ Haridwar         Dairy         11432             9                 19 🟡 MEDIUM PRIORITY
+Bengaluru     Beverages         11431             9                 19 🟡 MEDIUM PRIORITY
+   Jaipur Personal Care         11430             9                 19 🟡 MEDIUM PRIORITY
+    Noida         Dairy         11422             9                 19 🟡 MEDIUM PRIORITY
+  Chennai     Groceries         11421             9                 19 🟡 MEDIUM PRIORITY
+Hyderabad     Beverages         11420             9                 19 🟡 MEDIUM PRIORITY
+  Kolkata     Groceries         11417             9                 19 🟡 MEDIUM PRIORITY
+
+==================================================
+  PROJECT BY: HUMAIRA & KASHAB
+  Demand Forecasting & Dark Store
+  Optimization for 10-Min Delivery
+==================================================
